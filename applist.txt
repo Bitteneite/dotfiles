@@ -1,4 +1,6 @@
 nala
+stow
+
 i3
 kitty
 fish
