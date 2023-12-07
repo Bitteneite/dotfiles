@@ -1,3 +1,4 @@
+nala
 i3
 kitty
 fish
