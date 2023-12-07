@@ -3,3 +3,8 @@ i3
 kitty
 fish
 nnn
+
+
+
+linuxlogo
+neofetch
