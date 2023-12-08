@@ -18,14 +18,14 @@ set clipboard=unnamed
 "set guifont=Consolas:h16:cANSI
 
 " Plugins:
-call plug#begin('~/.vim/plugged')
-Plug 'lifepillar/vim-gruvbox8'
-Plug 'szw/vim-maximizer'
-Plug 'xolox/vim-shell'
-Plug 'xolox/vim-misc'
-Plug 'vim-airline/vim-airline'
-Plug 'lilydjwg/colorizer'
-call plug#end()
+"call plug#begin('~/.vim/plugged')
+"Plug 'lifepillar/vim-gruvbox8'
+"Plug 'szw/vim-maximizer'
+"Plug 'xolox/vim-shell'
+"Plug 'xolox/vim-misc'
+"Plug 'vim-airline/vim-airline'
+"Plug 'lilydjwg/colorizer'
+"call plug#end()
 
 " Theme:
 " colorscheme gruvbox8
