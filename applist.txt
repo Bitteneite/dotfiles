@@ -5,7 +5,7 @@ i3
 kitty
 fish
 nnn
-
+micro
 
 
 linuxlogo
