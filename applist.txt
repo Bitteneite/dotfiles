@@ -1,7 +1,9 @@
 nala
 stow
 
+feh
 i3
+
 kitty
 fish
 nnn
