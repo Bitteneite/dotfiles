@@ -6,8 +6,10 @@ i3
 
 kitty
 fish
-nnn
+lf
 micro
+
+timeshift
 
 
 linuxlogo
