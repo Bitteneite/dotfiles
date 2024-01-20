@@ -9,8 +9,6 @@ fish
 lf
 micro
 
-timeshift
-
 
 linuxlogo
 neofetch
