@@ -6,7 +6,6 @@ i3
 
 kitty
 fish
-lf
 micro
 
 
