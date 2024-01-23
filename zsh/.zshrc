@@ -81,7 +81,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 plugins=(	git
 			zsh-autosuggestions
 			zsh-syntax-highlighting
-			zsh-you-should-use
+			you-should-use
 		)
 
 source $ZSH/oh-my-zsh.sh
