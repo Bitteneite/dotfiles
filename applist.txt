@@ -1,13 +1,6 @@
-nala
 stow
 
-feh
-i3
-
 kitty
-fish
 micro
-
-
-linuxlogo
-neofetch
+lsd
+zsh
