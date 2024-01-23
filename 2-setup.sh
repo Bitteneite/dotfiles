@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Confirmation
-read -p "Do you wish to setup Zsh? (y/n): " answer
+read -p "Do you wish to setup Zsh? (enter/n): " answer
 if [ "$answer" = "n" ]; then
     echo "Aborting setup..."
     exit 1

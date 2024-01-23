@@ -2,9 +2,9 @@
 
 
 # Installing packages
-read -p "Do you wish to install packages from applist.txt? (y/n): " answer
+read -p "Do you wish to install packages from applist.txt? (enter/n): " answer
 
-if [ "$answer" = "y" ]; then
+if [ "$answer" != "n" ]; then
     echo "Installing packages from applist.txt file..."
     xargs sudo apt install -y < applist.txt
 	echo "Success!"
@@ -13,9 +13,9 @@ echo
 
 
 # Installing fonts
-read -p "Do you wish to install fonts? (y/n): " answer
+read -p "Do you wish to install fonts? (enter/n): " answer
 
-if [ "$answer" = "y" ]; then
+if [ "$answer" != "n" ]; then
 	echo "Installing fonts..."
 	stow fonts
 	echo "Success!"
@@ -24,9 +24,9 @@ echo
 
 
 # Change default shell
-read -p "Do you wish to change the default shell to Zsh? (y/n): " answer
+read -p "Do you wish to change the default shell to Zsh? (enter/n): " answer
 
-if [ "$answer" = "y" ]; then
+if [ "$answer" != "n" ]; then
 	echo "Changing default shell to Zsh..."
 	chsh -s $(which zsh)
 	echo "Success!"
