@@ -18,25 +18,27 @@ sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools
 # zsh-autosuggestions
 echo 
 echo "Installing zsh-autosuggestions..."
-sleep 2
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
 # zsh-syntax-highlighting
 echo 
 echo "Installing zsh-syntax-highlighting..."
-sleep 2
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+
+# zsh-you-should-use
+echo 
+echo "Installing zsh-you-should-use..."
+git clone https://github.com/MichaelAquilina/zsh-you-should-use.git $ZSH_CUSTOM/plugins/you-should-use
+
 
 # Powerlevel10k
 echo 
 echo "Installing Powerlevel10k..."
-sleep 2
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 
 # Deleting old .zshrc
 echo 
 echo "Installing personal .zshrc file..."
-sleep 2
 stow --adopt zsh
 git restore .
 
