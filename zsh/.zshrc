@@ -110,7 +110,7 @@ source $ZSH/oh-my-zsh.sh
  alias tmuxsource="tmux source ~/.config/tmux/tmux.config"
  alias ohmyzsh="micro ~/.oh-my-zsh"
  alias ls="ls -la --group-directories-first"
- alias n="nnn -e"
+ alias n="nnn"
  
 
 # nnn "cd on quit"
