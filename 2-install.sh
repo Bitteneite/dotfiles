@@ -13,7 +13,7 @@ cat applist.txt | gum choose --no-limit --header="Select Packages to install..."
 # Install
 if [ -s "temp.txt" ]; then
 	sudo -v # Check sudo password
-	gum spin --spinner points --show-output --title "Installing selected packages..." -- xargs sudo apt install -y < temp.txt
+	xargs sudo apt install -y < temp.txt
 	rm temp.txt
 fi
 
