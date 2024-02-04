@@ -1,16 +1,16 @@
-#!/bin/bash
+#!/bin/sh
 
-
-# Installing packages
-read -p "Do you wish to install packages from applist.txt? (enter/n): " answer
-
-if [ "$answer" != "n" ]; then
+#Installing packages
+# Choose
+cat applist.txt | gum choose --no-limit > temp.txt
+# Install
+if [ ! -s "temp.txt" ]; then
     echo "Installing packages from applist.txt file..."
-    xargs sudo apt install -y < applist.txt
-	echo "Success!"
+    xargs sudo apt install -y < temp.txt
+	rm temp.txt
 fi
-echo
 
+echo
 
 # Installing fonts
 read -p "Do you wish to install fonts? (enter/n): " answer
