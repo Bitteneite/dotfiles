@@ -114,7 +114,7 @@ source $ZSH/oh-my-zsh.sh
  
 
 # nnn "cd on quit"
-n ()
+n()
 {
     # Block nesting of nnn in subshells
     [ "${NNNLVL:-0}" -eq 0 ] || {
