@@ -1,12 +1,5 @@
 #!/bin/sh
 
-#Prompt
-gum style \
-	--border double \
-	--align center --width 40 --margin "1 2" --padding "1 4" \
-	'Bittens Incorporated' '' 'Installation Script' 'PART 2'
-
-
 #Installing packages
 choose_packages() {
 	cat applist.txt | gum choose --no-limit --header="Select Packages to install..." > temp.txt

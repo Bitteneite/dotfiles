@@ -1,6 +1,5 @@
 stow
 kitty
 micro
-nnn
 zsh
 tmux
