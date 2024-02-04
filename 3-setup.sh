@@ -1,12 +1,7 @@
 #!/bin/bash
 
 # Confirmation
-read -p "Do you wish to setup Zsh? (enter/n): " answer
-if [ "$answer" = "n" ]; then
-    echo "Aborting setup..."
-    exit 1
-fi
-echo
+gum confirm "Do you wish to setup Zsh?" && echo || echo "Aborting setup..." && exit 1
 
 #Plugins
 # Install Oh-My-Zsh

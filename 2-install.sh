@@ -28,10 +28,3 @@ gum confirm "Do you wish to install MesloLGS NF?" && stow fonts && echo "MesloLG
 
 echo
 
-
-
-#Notes
-gum style \
-	--border double \
-	--align center --width 40 --margin "1 2" --padding "1 4" \
-	'Bittens Incorporated' '' 'Installation Script' 'PART 2'
