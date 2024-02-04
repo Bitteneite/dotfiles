@@ -1,27 +1,37 @@
 #!/bin/sh
 
+#Prompt
+gum style \
+	--border double \
+	--align center --width 40 --margin "1 2" --padding "1 4" \
+	'Bittens Incorporated' '' 'Installation Script' 'PART 2'
+
+
 #Installing packages
 # Choose
-cat applist.txt | gum choose --no-limit > temp.txt
+cat applist.txt | gum choose --no-limit --header="Select Packages to install..." > temp.txt
 # Install
-if [ ! -s "temp.txt" ]; then
-    echo "Installing packages from applist.txt file..."
-    xargs sudo apt install -y < temp.txt
+if [ -s "temp.txt" ]; then
+	sudo -v # Check sudo password
+	gum spin --spinner points --title "Installing selected packages..." -- xargs sudo apt install -y < temp.txt
 	rm temp.txt
 fi
 
+
 echo
+
 
 # Installing fonts
-read -p "Do you wish to install fonts? (enter/n): " answer
+gum confirm "Do you wish to install MesloLGS NF?" && stow fonts && echo "MesloLGS NF successfully installed into ~/.fonts" && echo "Please change your terminal's font to MesloLGS, size 14-16." || echo
 
-if [ "$answer" != "n" ]; then
-	echo "Installing fonts..."
-	stow fonts
-	echo "Success!"
-fi
+
+
 echo
 
-# EXTRAS
-echo "NOTE:"
-echo "- Change your terminal's font to MesloLGS, size 14-16."
+
+
+#Notes
+gum style \
+	--border double \
+	--align center --width 40 --margin "1 2" --padding "1 4" \
+	'Bittens Incorporated' '' 'Installation Script' 'PART 2'
