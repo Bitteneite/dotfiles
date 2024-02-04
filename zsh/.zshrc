@@ -109,7 +109,7 @@ source $ZSH/oh-my-zsh.sh
  alias tmuxconfig="micro ~/.config/tmux/tmux.config"
  alias tmuxsource="tmux source ~/.config/tmux/tmux.config"
  alias ohmyzsh="micro ~/.oh-my-zsh"
- alias ls="ls -la --group-directories-first --date relative"
+ alias ls="ls -la --group-directories-first"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
