@@ -8,23 +8,29 @@ gum style \
 
 
 #Installing packages
-# Choose
-cat applist.txt | gum choose --no-limit --header="Select Packages to install..." > temp.txt
-# Install
-if [ -s "temp.txt" ]; then
+choose_packages() {
+	cat applist.txt | gum choose --no-limit --header="Select Packages to install..." > temp.txt
+}
+install_packages() {
 	sudo -v # Check sudo password
 	xargs sudo apt install -y < temp.txt
 	rm temp.txt
+}
+#Prompt
+choose_packages
+if [ -s "temp.txt" ]; then
+	install()
 fi
 
 
-echo
-
-
 # Installing fonts
-gum confirm "Do you wish to install MesloLGS NF?" && stow fonts && echo "MesloLGS NF successfully installed into ~/.fonts" && echo "Please change your terminal's font to MesloLGS, size 14-16." || echo
+install_font() {
+	stow fonts
+	echo "MesloLGS NF successfully installed into ~/.fonts"
+	echo "Please change your terminal's font to MesloLGS, size 14-16."
+}
+#Prompt
+gum confirm "Do you wish to install MesloLGS NF?" && install_font || echo
 
 
-
-echo
 
