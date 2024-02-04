@@ -19,7 +19,7 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
 # Deleting old .zshrc
 echo 
 echo "Installing personal .zshrc file..."
-stow --adopt zsh
+stow --adopt zsh zsh-powerline
 git restore .
 
 echo
