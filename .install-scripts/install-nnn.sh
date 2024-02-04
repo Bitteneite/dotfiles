@@ -7,8 +7,4 @@ install() {
 }
 
 #Prompt
-gum confirm "Do you wish to install NNN?" && install() || echo
-
-
-
-
+gum confirm "Do you wish to install NNN?" && install || echo
