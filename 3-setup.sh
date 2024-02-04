@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Confirmation
-gum confirm "Do you wish to setup Zsh?" && echo || echo "Aborting setup..." && exit 1
+gum confirm "Do you wish to setup Zsh?" && echo "lmao" || exit 1
 
 #Plugins
 # Install Oh-My-Zsh
