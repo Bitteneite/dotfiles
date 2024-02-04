@@ -19,7 +19,7 @@ install_packages() {
 #Prompt
 choose_packages
 if [ -s "temp.txt" ]; then
-	install()
+	install
 fi
 
 
