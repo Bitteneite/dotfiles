@@ -45,6 +45,5 @@ install_prompt "Powerlevel10k" Powerlevel10k
 zshrcinstall(){
 	stow --adopt zsh
 	git restore .
-	echo "Zshrc config files installed!"
 }
 install_prompt "configuration files" zshrcinstall
