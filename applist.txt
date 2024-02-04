@@ -1,5 +1,4 @@
 stow
-kitty
 micro
 zsh
 tmux
