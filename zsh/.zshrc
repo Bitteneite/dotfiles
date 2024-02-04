@@ -110,7 +110,6 @@ source $ZSH/oh-my-zsh.sh
  alias tmuxsource="tmux source ~/.config/tmux/tmux.config"
  alias ohmyzsh="micro ~/.oh-my-zsh"
  alias ls="ls -la --group-directories-first"
- alias n="nnn"
  
 
 # nnn "cd on quit"
@@ -122,8 +121,6 @@ n()
         return
     }
 
-    # The behaviour is set to cd on quit (nnn checks if NNN_TMPFILE is set)
-    # If NNN_TMPFILE is set to a custom path, it must be exported for nnn to
     # see. To cd on quit only on ^G, remove the "export" and make sure not to
     # use a custom path, i.e. set NNN_TMPFILE *exactly* as follows:
     #      NNN_TMPFILE="${XDG_CONFIG_HOME:-$HOME/.config}/nnn/.lastd"
