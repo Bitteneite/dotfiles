@@ -1,6 +1,6 @@
 stow
-
 kitty
 micro
-lsd
+nnn
 zsh
+tmux
