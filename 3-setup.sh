@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # Confirmation
 gum confirm "Do you wish to setup Zsh?" && echo || echo "Aborting setup..." && exit 1
