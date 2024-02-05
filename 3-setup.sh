@@ -43,7 +43,7 @@ install_prompt "Powerlevel10k" Powerlevel10k
 
 # Install personal zsh config files
 zshrcinstall(){
-	stow --adopt zsh
+	stow --adopt zsh -d ~/dotfiles
 	git restore .
 }
 install_prompt "configuration files" zshrcinstall
