@@ -3,7 +3,7 @@
 install_prompt() {
   local name=$1
   local function=$2
-  gum confirm "Do you wish to setup $name?" && function
+  gum confirm "Do you wish to setup $name?" && $function
 }
 
 # Install oh-my-zsh
