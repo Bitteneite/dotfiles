@@ -80,9 +80,6 @@ export EDITOR='micro'
  alias ohmyzsh="micro ~/.oh-my-zsh"
  alias ls="ls -la --group-directories-first"
  
- alias apt="\nala"
- alias dapt="\apt"
- 
 
 # nnn "cd on quit"
 n()
