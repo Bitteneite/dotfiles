@@ -79,6 +79,7 @@ export EDITOR='micro'
  alias tmuxsource="tmux source ~/.tmux.conf"
  alias ohmyzsh="micro ~/.oh-my-zsh"
  alias ls="ls -la --group-directories-first"
+ alias bat="batcat"
  
 
 # nnn "cd on quit"
