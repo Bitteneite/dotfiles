@@ -75,8 +75,8 @@ export EDITOR='micro'
 # Aliases
  alias zshconfig="micro ~/.zshrc"
  alias zshsource="source ~/.zshrc"
- alias tmuxconfig="micro ~/.config/tmux/tmux.conf"
- alias tmuxsource="tmux source ~/.config/tmux/tmux.conf"
+ alias tmuxconfig="micro ~/.tmux.conf"
+ alias tmuxsource="tmux source ~/.tmux.conf"
  alias ohmyzsh="micro ~/.oh-my-zsh"
  alias ls="ls -la --group-directories-first"
  
