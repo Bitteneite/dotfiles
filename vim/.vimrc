@@ -1,11 +1,21 @@
-" Settings:
+" Plugin Loading
+call plug#begin('~/.vim/plugged')
+Plug 'vim-airline/vim-airline'
+Plug 'jdhao/better-escape.vim' "remaps esc key to jj
+Plug 'junegunn/goyo.vim' "Removes Line numbers for focusing
+Plug 'godlygeek/tabular' "Auto formatting
+Plug 'plasticboy/vim-markdown' "Markdown syntax highlighting
+Plug 'ryanoasis/vim-devicons' "Cool icons for nerd tree
+Plug '907th/vim-auto-save' "auto saves files as you edit
+call plug#end()
+
+" Startup Settings
 syntax on
 set noerrorbells
 set tabstop=4 softtabstop=4
 set shiftwidth=4
 set linespace=4
 set smartindent
-set nowrap
 set nu
 set relativenumber
 set smartcase
@@ -15,20 +25,10 @@ set undodir=~/vimfiles/tmp_undo
 set undofile
 set incsearch
 set clipboard=unnamed
-"set guifont=Consolas:h16:cANSI
 
-" Plugins:
-"call plug#begin('~/.vim/plugged')
-"Plug 'lifepillar/vim-gruvbox8'
-"Plug 'szw/vim-maximizer'
-"Plug 'xolox/vim-shell'
-"Plug 'xolox/vim-misc'
-"Plug 'vim-airline/vim-airline'
-"Plug 'lilydjwg/colorizer'
-"call plug#end()
+
 
 " Theme:
-" colorscheme gruvbox8
 
 " Remap:
 let mapleader = " "
