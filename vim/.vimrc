@@ -1,29 +1,30 @@
 " Plugin Loading
 call plug#begin('~/.vim/plugged')
-Plug 'jdhao/better-escape.vim' "remaps esc key to jj
-Plug 'junegunn/goyo.vim' "Removes Line numbers for focusing
-Plug 'godlygeek/tabular' "Auto formatting
-Plug 'plasticboy/vim-markdown' "Markdown syntax highlighting
-Plug 'ryanoasis/vim-devicons' "Cool icons for nerd tree
-Plug 'psliwka/vim-smoothie'
+Plug 'psliwka/vim-smoothie'		"Start page
+Plug 'jdhao/better-escape.vim'	"Remaps Esc key -> jk
+Plug 'junegunn/goyo.vim'		"Removes Line numbers for focusing
+Plug 'godlygeek/tabular'		"Auto formatting
+Plug 'plasticboy/vim-markdown'	"Markdown syntax highlighting
+Plug 'psliwka/vim-smoothie'		"Smooth scrolling
 call plug#end()
 
 " Startup Settings
-syntax on
-set noerrorbells
-set tabstop=4 softtabstop=4
+syntax on						"Syntax Coloring
+set noerrorbells				"No more annoying error sound
+set tabstop=4 softtabstop=4		"Bigger tab key
 set shiftwidth=4
 set linespace=4
 set smartindent
-set nu
-set relativenumber
+set nu							"Line Numbering
+set relativenumber				"Relative Numbering
+set ignorecase					"Searching stuff
 set smartcase
-"set noswapfile
-"set nobackup
-set undodir=~/vimfiles/tmp_undo
-set undofile
 set incsearch
-set clipboard=unnamed
+"set noswapfile					"Swapfile stuff
+"set nobackup
+set undodir=~/vimfiles/tmp_undo	"Undo stuff
+set undofile
+set clipboard=unnamed			"Copying stuff
 
 
 
@@ -32,6 +33,8 @@ set clipboard=unnamed
 " Remap:
 let mapleader = " "
 nnoremap <leader>so :source ~/.vimrc<CR>
-nnoremap <leader>av :e ~/.vimrc<CR>
 nnoremap <leader>tn :tabnew<CR>
+nnoremap <leader>go :Goyo<CR>
+
+
 
