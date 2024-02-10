@@ -1,12 +1,11 @@
 " Plugin Loading
 call plug#begin('~/.vim/plugged')
-Plug 'vim-airline/vim-airline'
 Plug 'jdhao/better-escape.vim' "remaps esc key to jj
 Plug 'junegunn/goyo.vim' "Removes Line numbers for focusing
 Plug 'godlygeek/tabular' "Auto formatting
 Plug 'plasticboy/vim-markdown' "Markdown syntax highlighting
 Plug 'ryanoasis/vim-devicons' "Cool icons for nerd tree
-Plug '907th/vim-auto-save' "auto saves files as you edit
+Plug 'psliwka/vim-smoothie'
 call plug#end()
 
 " Startup Settings
