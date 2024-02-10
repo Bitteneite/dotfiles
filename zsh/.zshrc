@@ -76,7 +76,7 @@ export EDITOR='vim'
  alias tmuxconfig="micro ~/.tmux.conf"
  alias tmuxsource="tmux source ~/.tmux.conf"
  alias ohmyzsh="micro ~/.oh-my-zsh"
- alias ls="ls -la --group-directories-first"
+ alias ls="eza -la --group-directories-first --header --time-style relative"
  alias bat="batcat"
  
 
