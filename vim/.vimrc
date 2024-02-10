@@ -6,6 +6,7 @@ Plug 'junegunn/goyo.vim'		"Removes Line numbers for focusing
 Plug 'godlygeek/tabular'		"Auto formatting
 Plug 'plasticboy/vim-markdown'	"Markdown syntax highlighting
 Plug 'psliwka/vim-smoothie'		"Smooth scrolling
+Plug 'Yggdroot/indentLine'		"Indent line
 Plug 'ayu-theme/ayu-vim' " or other package manager
 call plug#end()
 
