@@ -6,6 +6,7 @@ Plug 'junegunn/goyo.vim'		"Removes Line numbers for focusing
 Plug 'godlygeek/tabular'		"Auto formatting
 Plug 'plasticboy/vim-markdown'	"Markdown syntax highlighting
 Plug 'psliwka/vim-smoothie'		"Smooth scrolling
+Plug 'ayu-theme/ayu-vim' " or other package manager
 call plug#end()
 
 " Startup Settings
@@ -30,6 +31,16 @@ set clipboard=unnamed			"Copying stuff
 
 
 " Theme:
+
+" IndentLine {{
+let g:indentLine_char = ''
+let g:indentLine_first_char = ''
+let g:indentLine_showFirstIndentLevel = 1
+let g:indentLine_setColors = 0
+" }}
+
+colorscheme ayu
+
 
 " Remap:
 let mapleader = " "
