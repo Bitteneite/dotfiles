@@ -120,8 +120,8 @@ n()
 
 
 # Automatically start tmux
-if command -v tmux &> /dev/null; then
-    if [ -z $TMUX ]; then
-        exec tmux
-    fi
-fi
+#if command -v tmux &> /dev/null; then
+#    if [ -z $TMUX ]; then
+#        exec tmux
+#    fi
+#fi
