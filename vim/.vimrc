@@ -7,7 +7,6 @@ Plug 'godlygeek/tabular'		"Auto formatting
 Plug 'plasticboy/vim-markdown'	"Markdown syntax highlighting
 Plug 'psliwka/vim-smoothie'		"Smooth scrolling
 Plug 'Yggdroot/indentLine'		"Indent line
-Plug 'ayu-theme/ayu-vim' " or other package manager
 call plug#end()
 
 " Startup Settings
@@ -32,19 +31,6 @@ set clipboard=unnamed			"Copying stuff
 
 
 " Theme:
-
-set termguicolors     " enable true colors support
-"let ayucolor="light"  " for light version of theme
-let ayucolor="mirage" " for mirage version of theme
-"let ayucolor="dark"   " for dark version of theme
-colorscheme ayu
-
-" IndentLine {{
-let g:indentLine_char = ''
-let g:indentLine_first_char = ''
-let g:indentLine_showFirstIndentLevel = 1
-let g:indentLine_setColors = 0
-" }}
 
 
 " Remap:
