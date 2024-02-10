@@ -16,7 +16,6 @@ set noerrorbells				"No more annoying error sound
 set tabstop=4 softtabstop=4		"Bigger tab key
 set shiftwidth=4
 set linespace=4
-set scrolloff=3					"Scroll early
 set smartindent
 set nu							"Line Numbering
 set relativenumber				"Relative Numbering
