@@ -7,7 +7,6 @@ Plug 'godlygeek/tabular'		"Auto formatting
 Plug 'plasticboy/vim-markdown'	"Markdown syntax highlighting
 Plug 'psliwka/vim-smoothie'		"Smooth scrolling
 Plug 'Yggdroot/indentLine'		"Indent line
-Plug 'morhetz/gruvbox'			"Gruvbox
 call plug#end()
 
 " Startup Settings
@@ -32,7 +31,6 @@ set clipboard=unnamed			"Copying stuff
 
 
 " Theme:
-autocmd vimenter * ++nested colorscheme gruvbox
 
 " Remap:
 let mapleader = " "
