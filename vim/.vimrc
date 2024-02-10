@@ -1,6 +1,6 @@
 " Plugin Loading
 call plug#begin('~/.vim/plugged')
-Plug 'psliwka/vim-smoothie'		"Start page
+Plug 'mhinz/vim-startify'		"Start page
 Plug 'jdhao/better-escape.vim'	"Remaps Esc key -> jk
 Plug 'junegunn/goyo.vim'		"Removes Line numbers for focusing
 Plug 'godlygeek/tabular'		"Auto formatting
