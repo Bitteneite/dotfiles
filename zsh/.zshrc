@@ -71,14 +71,18 @@ source $ZSH/oh-my-zsh.sh
 export EDITOR='vim'
 
 # Aliases
- alias zshconfig="micro ~/.zshrc"
- alias zshsource="source ~/.zshrc"
- alias tmuxconfig="micro ~/.tmux.conf"
- alias tmuxsource="tmux source ~/.tmux.conf"
- alias ohmyzsh="micro ~/.oh-my-zsh"
  alias ls="eza -la --group-directories-first --header --time-style relative"
  alias bat="batcat"
  
+ alias zshconfig="vim ~/.zshrc"
+ alias zshsource="source ~/.zshrc"
+ alias ohmyzshconfig="vim ~/.oh-my-zsh"
+ 
+ alias tmuxconfig="vim ~/.tmux.conf"
+ alias tmuxsource="tmux source ~/.tmux.conf"
+ 
+ alias vimconfig="vim ~/.vimrc"
+
 
 # nnn "cd on quit"
 n()
