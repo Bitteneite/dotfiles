@@ -62,15 +62,13 @@ plugins=(	git
 
 source $ZSH/oh-my-zsh.sh
 
-
-# Preferred editor for local and remote sessions
-export EDITOR='vim'
-
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
+
+# Preferred editor for local and remote sessions
+export EDITOR='vim'
 
 # Aliases
  alias zshconfig="micro ~/.zshrc"
