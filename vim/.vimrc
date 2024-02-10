@@ -10,7 +10,7 @@ call plug#end()
 
 " Startup Settings
 syntax on						"Syntax Coloring
-set mouse=a						"Allows mouse usage.
+"set mouse=a					"Allows mouse usage.
 set noerrorbells				"No more annoying error sound
 set tabstop=4 softtabstop=4		"Bigger tab key
 set shiftwidth=4
