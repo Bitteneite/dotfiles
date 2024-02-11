@@ -30,6 +30,7 @@ set clipboard=unnamed			"Copying stuff
 
 
 " Theme:
+colorscheme elflord
 
 " Remap:
 let mapleader = " "
