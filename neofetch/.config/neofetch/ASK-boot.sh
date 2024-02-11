@@ -10,8 +10,9 @@ echo
 echo "                  \e[1;37mPersonal Computer\e[0m                  "
 echo
 echo "╔═══════════════════════════════════════════════════╗"
-echo "║               ASK Operating System/2              ║"
-echo "║                    Version 1.00                   ║"
+echo "║               \e[1;37mASK Operating System/2\e[0m              ║"
+echo "║                    \e[1;37mVersion 1.00\e[0m                   ║"
 echo "╚═══════════════════════════════════════════════════╝"
 echo
 echo "  (C) Copyright ASK Corp. 1981. All rights reserved. "
+echo
