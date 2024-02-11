@@ -73,6 +73,7 @@ export EDITOR='micro'
 # Aliases
  alias ls="eza -la --group-directories-first --header --time-style relative"
  alias bat="batcat"
+ alias ask="sh ~/.config/neofetch/ASK-w.sh"
  
  alias zshconfig="micro ~/.zshrc"
  alias zshsource="source ~/.zshrc"
@@ -125,9 +126,3 @@ n()
 #        exec tmux
 #    fi
 #fi
-
-if command -v tmux &> /dev/null; then
-    if [ -z $TMUX ]; then
-        sh ./.config/neofetch/ASK-w.sh
-    fi
-fi
