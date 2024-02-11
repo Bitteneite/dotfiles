@@ -68,20 +68,20 @@ source $ZSH/oh-my-zsh.sh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 
 # Preferred editor for local and remote sessions
-export EDITOR='vim'
+export EDITOR='micro'
 
 # Aliases
  alias ls="eza -la --group-directories-first --header --time-style relative"
  alias bat="batcat"
  
- alias zshconfig="vim ~/.zshrc"
+ alias zshconfig="micro ~/.zshrc"
  alias zshsource="source ~/.zshrc"
- alias ohmyzshconfig="vim ~/.oh-my-zsh"
+ alias ohmyzshconfig="micro ~/.oh-my-zsh"
  
- alias tmuxconfig="vim ~/.tmux.conf"
+ alias tmuxconfig="micro ~/.tmux.conf"
  alias tmuxsource="tmux source ~/.tmux.conf"
  
- alias vimconfig="vim ~/.vimrc"
+ alias vimconfig="micro ~/.vimrc"
 
 
 # nnn "cd on quit"
