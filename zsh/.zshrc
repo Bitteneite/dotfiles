@@ -126,8 +126,8 @@ n()
 #    fi
 #fi
 
-# Print the ASK logo on tmux startup
-if [ -n "$TMUX" ] && [ -z "$TMUX_INIT" ]; then
-    export TMUX_INIT=1
-    ~/.config/neofetch/ASK-w.sh
+if command -v tmux &> /dev/null; then
+    if [ -z $TMUX ]; then
+        sh ./.config/neofetch/ASK-w.sh
+    fi
 fi
