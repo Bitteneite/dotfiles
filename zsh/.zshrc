@@ -46,13 +46,9 @@ zstyle ':omz:update' mode reminder
 # COMPLETION_WAITING_DOTS="true"
 
 
-# Uncomment the following line if you want to change the command execution time
-# stamp shown in the history command output.
-# You can set one of the optional three formats:
+# Command execution timestamp shown in history
 # "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
-# or set a custom format using the strftime function format specifications,
-# see 'man strftime' for details.
-# HIST_STAMPS="mm/dd/yyyy"
+HIST_STAMPS="dd.mm.yyyy"
 
 plugins=(	git
 			zsh-autosuggestions
@@ -68,24 +64,22 @@ source $ZSH/oh-my-zsh.sh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 
 # Preferred editor for local and remote sessions
-export EDITOR='micro'
+export EDITOR='vim'
 
 # Aliases
  alias ls="eza -la --group-directories-first --header --time-style relative"
  alias bat="batcat"
  alias ask="sh ~/.config/neofetch/ASK-w.sh"
  
- alias zshconfig="micro ~/.zshrc"
+ alias zshconfig="vim ~/.zshrc"
  alias zshsource="source ~/.zshrc"
- alias ohmyzshconfig="micro ~/.oh-my-zsh"
+ alias ohmyzshconfig="vim ~/.oh-my-zsh"
  
- alias tmuxconfig="micro ~/.tmux.conf"
+ alias tmuxconfig="vim ~/.tmux.conf"
  alias tmuxsource="tmux source ~/.tmux.conf"
- 
- alias vimconfig="micro ~/.vimrc"
 
 
-# nnn "cd on quit"
+# nnn alias + "cd on quit"
 n()
 {
     # Block nesting of nnn in subshells
