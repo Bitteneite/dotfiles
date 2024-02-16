@@ -1,9 +1,15 @@
 -- [[ Configure plugins ]]
 require('lazy').setup({
+	'jdhao/better-escape.vim'		-- Remaps Esc key -> jk
+	'psliwka/vim-smoothie'			-- Smooth scrolling
+	'takac/vim-hardtime'			-- Reduce HJKL usage
+	'danth/pathfinder.vim'			-- Movement Suggestions
+
 	'tpope/vim-fugitive',
 	'tpope/vim-rhubarb',
 	'tpope/vim-sleuth',				-- Detect tabstop and shiftwidth automatically
-	"nvim-lualine/lualine.nvim",	-- Set lualine as statusline | See `:help lualine.txt`
+	'nvim-lualine/lualine.nvim',	-- Set lualine as statusline | See `:help lualine.txt`
+	
 
 	-- Catppuccin
 	{
