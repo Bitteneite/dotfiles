@@ -2,7 +2,9 @@
 require('lazy').setup({
 	'tpope/vim-fugitive',
 	'tpope/vim-rhubarb',
-	'tpope/vim-sleuth',		-- Detect tabstop and shiftwidth automatically
+	'tpope/vim-sleuth',				-- Detect tabstop and shiftwidth automatically
+	"nvim-lualine/lualine.nvim",	-- Set lualine as statusline | See `:help lualine.txt`
+	'nvim-lualine/lualine.nvim',	
 
 	-- Catppuccin
 	{
@@ -143,34 +145,6 @@ require('lazy').setup({
 	  end,
 	},
   },
-
-	-- Theme inspired by Atom
---	{
---		'navarasu/onedark.nvim',
---		priority = 1000,
---		lazy = false,
---		config = function()
---		require('onedark').setup {
---			-- Set a style preset. 'dark' is default.
---			style = 'dark', -- dark, darker, cool, deep, warm, warmer, light
---		}
---		require('onedark').load()
---		end,
---	},
-
-	-- Set lualine as statusline
-	{
-		'nvim-lualine/lualine.nvim',
-		-- See `:help lualine.txt`
-		opts = {
-			options = {
-				icons_enabled = false,
-				theme = 'auto',
-				component_separators = '|',
-				section_separators = '',
-			},
-		},
-	},
 
 	-- Add indentation guides even on blank lines
 	{
