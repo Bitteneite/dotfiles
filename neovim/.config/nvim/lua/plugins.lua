@@ -5,19 +5,15 @@
 --  You can also configure plugins after the setup call,
 --    as they will be available in your neovim runtime.
 require('lazy').setup({
-  -- NOTE: First, some plugins that don't require any configuration
-
-  -- Git related plugins
   'tpope/vim-fugitive',
   'tpope/vim-rhubarb',
-
-  -- Detect tabstop and shiftwidth automatically
-  'tpope/vim-sleuth',
+  'tpope/vim-sleuth',		-- Detect tabstop and shiftwidth automatically
 
   -- NOTE: This is where your plugins related to LSP can be installed.
-  --  The configuration is done below. Search for lspconfig to find it below.
+  -- The configuration is done below. Search for lspconfig to find it below.
+
+	-- LSP Configuration & Plugins
   {
-    -- LSP Configuration & Plugins
     'neovim/nvim-lspconfig',
     dependencies = {
       -- Automatically install LSPs to stdpath for neovim
@@ -33,8 +29,8 @@ require('lazy').setup({
     },
   },
 
+	-- Autocompletion
   {
-    -- Autocompletion
     'hrsh7th/nvim-cmp',
     dependencies = {
       -- Snippet Engine & its associated nvim-cmp source
@@ -61,10 +57,11 @@ require('lazy').setup({
     },
   },
 
-  -- Useful plugin to show you pending keybinds.
+	-- Useful plugin to show you pending keybinds.
   { 'folke/which-key.nvim', opts = {} },
+  
+	-- Adds git related signs to the gutter, as well as utilities for managing changes
   {
-    -- Adds git related signs to the gutter, as well as utilities for managing changes
     'lewis6991/gitsigns.nvim',
     opts = {
       -- See `:help gitsigns.txt`
@@ -138,8 +135,8 @@ require('lazy').setup({
     },
   },
 
+	-- Theme inspired by Atom
   {
-    -- Theme inspired by Atom
     'navarasu/onedark.nvim',
     priority = 1000,
     lazy = false,
@@ -152,8 +149,8 @@ require('lazy').setup({
     end,
   },
 
+	-- Set lualine as statusline
   {
-    -- Set lualine as statusline
     'nvim-lualine/lualine.nvim',
     -- See `:help lualine.txt`
     opts = {
@@ -166,8 +163,9 @@ require('lazy').setup({
     },
   },
 
+	-- Add indentation guides even on blank lines
   {
-    -- Add indentation guides even on blank lines
+    
     'lukas-reineke/indent-blankline.nvim',
     -- Enable `lukas-reineke/indent-blankline.nvim`
     -- See `:help ibl`
@@ -175,10 +173,10 @@ require('lazy').setup({
     opts = {},
   },
 
-  -- "gc" to comment visual regions/lines
+	-- "gc" to comment visual regions/lines
   { 'numToStr/Comment.nvim', opts = {} },
 
-  -- Fuzzy Finder (files, lsp, etc)
+	-- Fuzzy Finder (files, lsp, etc)
   {
     'nvim-telescope/telescope.nvim',
     branch = '0.1.x',
@@ -199,8 +197,8 @@ require('lazy').setup({
     },
   },
 
+	-- Highlight, edit, and navigate code
   {
-    -- Highlight, edit, and navigate code
     'nvim-treesitter/nvim-treesitter',
     dependencies = {
       'nvim-treesitter/nvim-treesitter-textobjects',
