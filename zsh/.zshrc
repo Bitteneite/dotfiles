@@ -78,6 +78,7 @@ export EDITOR='nvim'
  alias tmuxconfig="nvim ~/.tmux.conf"
  alias tmuxsource="tmux source ~/.tmux.conf"
 
+ alias vn="nvim"
 
 # nnn alias + "cd on quit"
 n()
