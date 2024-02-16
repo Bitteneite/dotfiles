@@ -3,7 +3,7 @@ require('lazy').setup({
 	'jdhao/better-escape.vim',		-- Remaps Esc key -> jk
 	'psliwka/vim-smoothie',			-- Smooth scrolling
 	'takac/vim-hardtime',			-- Reduce HJKL usage
-	'danth/pathfinder.vim',			-- Movement Suggestions
+--	'danth/pathfinder.vim',			-- Movement Suggestions
 
 	'tpope/vim-fugitive',
 	'tpope/vim-rhubarb',
