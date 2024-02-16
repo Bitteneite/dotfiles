@@ -4,7 +4,6 @@ require('lazy').setup({
 	'tpope/vim-rhubarb',
 	'tpope/vim-sleuth',				-- Detect tabstop and shiftwidth automatically
 	"nvim-lualine/lualine.nvim",	-- Set lualine as statusline | See `:help lualine.txt`
-	'nvim-lualine/lualine.nvim',	
 
 	-- Catppuccin
 	{
