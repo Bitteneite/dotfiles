@@ -1,1 +1,1 @@
-require("core.plugin_config.colorscheme")
+require("core.plugins_config.colorscheme")
