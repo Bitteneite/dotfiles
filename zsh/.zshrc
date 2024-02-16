@@ -64,18 +64,18 @@ source $ZSH/oh-my-zsh.sh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 
 # Preferred editor for local and remote sessions
-export EDITOR='vim'
+export EDITOR='nvim'
 
 # Aliases
  alias ls="eza -la --group-directories-first --header --time-style relative"
  alias bat="batcat"
  alias ask="sh ~/.config/neofetch/ASK-w.sh"
  
- alias zshconfig="vim ~/.zshrc"
+ alias zshconfig="nvim ~/.zshrc"
  alias zshsource="source ~/.zshrc"
- alias ohmyzshconfig="vim ~/.oh-my-zsh"
+ alias ohmyzshconfig="nvim ~/.oh-my-zsh"
  
- alias tmuxconfig="vim ~/.tmux.conf"
+ alias tmuxconfig="nvim ~/.tmux.conf"
  alias tmuxsource="tmux source ~/.tmux.conf"
 
 
