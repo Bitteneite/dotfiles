@@ -67,18 +67,18 @@ source $ZSH/oh-my-zsh.sh
 export EDITOR='nvim'
 
 # Aliases
- alias ls="eza -la --group-directories-first --header --time-style relative"
- alias bat="batcat"
- alias ask="sh ~/.config/neofetch/ASK-w.sh"
+alias ls="eza -la --group-directories-first --header --time-style relative"
+alias bat="batcat"
+alias ask="sh ~/.config/neofetch/ASK-w.sh"
  
- alias zshconfig="nvim ~/.zshrc"
- alias zshsource="source ~/.zshrc"
- alias ohmyzshconfig="nvim ~/.oh-my-zsh"
+alias zshconfig="nvim ~/.zshrc"
+alias zshsource="source ~/.zshrc"
+alias ohmyzshconfig="nvim ~/.oh-my-zsh"
  
- alias tmuxconfig="nvim ~/.tmux.conf"
- alias tmuxsource="tmux source ~/.tmux.conf"
+alias tmuxconfig="nvim ~/.tmux.conf"
+alias tmuxsource="tmux source ~/.tmux.conf"
 
- alias vn="nvim"
+alias vn="nvim"
 
 # nnn alias + "cd on quit"
 n()
