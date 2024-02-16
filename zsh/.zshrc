@@ -78,7 +78,7 @@ alias ohmyzshconfig="nvim ~/.oh-my-zsh"
 alias tmuxconfig="nvim ~/.tmux.conf"
 alias tmuxsource="tmux source ~/.tmux.conf"
 
-alias vn="nvim"
+alias nv="nvim"
 
 # nnn alias + "cd on quit"
 n()
