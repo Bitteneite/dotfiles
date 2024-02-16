@@ -4,6 +4,13 @@ require('lazy').setup({
 	'tpope/vim-rhubarb',
 	'tpope/vim-sleuth',		-- Detect tabstop and shiftwidth automatically
 
+	-- Catppuccin
+	{
+		"catppuccin/nvim",
+		name = "catppuccin",
+		priority = 1000 
+	},
+
 	-- LSP Configuration & Plugins
 	{
 		'neovim/nvim-lspconfig',
