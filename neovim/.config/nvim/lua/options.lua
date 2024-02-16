@@ -8,11 +8,8 @@ vim.opt.autowrite = true
 vim.opt.cursorline = true
 vim.opt.autoread = true
 
--- use spaces for tabs and whatnot
 vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
-vim.opt.shiftround = true
-vim.opt.expandtab = true
 
 vim.cmd [[ set noswapfile ]]
 vim.cmd [[ set termguicolors ]]
