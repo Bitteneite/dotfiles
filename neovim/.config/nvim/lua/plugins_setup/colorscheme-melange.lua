@@ -1,4 +1,0 @@
---require("melange").setup()
-
-vim.opt.termguicolors = true
-vim.cmd.colorscheme 'melange'
