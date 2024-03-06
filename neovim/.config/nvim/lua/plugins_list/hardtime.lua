@@ -8,12 +8,12 @@ return {
 	-- Start + Config
 	config = function()
 		require("hardtime").setup({
-			restricted_keys = {
-				["w"] = { "n", "x" },
-				["W"] = { "n", "x" },
-				["b"] = { "n", "x" },
-				["B"] = { "n", "x" },
-			},
+			--restricted_keys = {
+			--	["w"] = { "n", "x" },
+			--	["W"] = { "n", "x" },
+			--	["b"] = { "n", "x" },
+			--	["B"] = { "n", "x" },
+			--},
 			
 			disable_mouse = false	-- Enable mouse
 		})
